@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking hotel</title>
+    <link rel="stylesheet" type="text/css" href="./STYLES/stylesreserva.css">
+</head>
+
+<body>
+    <form action="#">
+        <header>
+            <nav>
+                <input type="radio" name="filter" value="all" id="all" checked="checked">
+                <label for="all">All <span>30</span></label>
+                <input type="radio" name="filter" value="active" id="act">
+                <label for="act">Active <span>6</span></label>
+                <input type="radio" name="filter" value="adventure" id="adv">
+                <label for="adv">Adventure &amp; Wildlife <span>11</span></label>
+                <input type="radio" name="filter" value="culture" id="cult">
+                <label for="cult">Culture &amp; Heritage <span>16</span></label>
+                <input type="radio" name="filter" value="leisure" id="lei">
+                <label for="lei">Leisure <span>15</span></label>
+                <input type="radio" name="filter" value="signature" id="sig">
+                <label for="sig">Signature <span>3</span></label>
+                <input type="radio" name="filter" value="smooth" id="smo">
+                <label for="smo">Smooth Sailing <span>3</span></label>
+                <input type="radio" name="filter" value="wellness" id="well">
+                <label for="well">Wellness <span>1</span></label>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="filter outer">
+                    <div class="filter-content">
+
+                        <fieldset>
+                            
+                                <input type="textbox" name="searchbydestination" id="search"
+                                    placeholder="Search by destination">
+                                <h4>Budget</h4>
+                                <input type="range" min="41000" max="850000" value="41000" class="slider" id="myRange">
+                                <label>41000-850000</label>                            
+                                <h4>Travel Month</h4>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="AprilJune" id="AprJun" class="travel">
+                                        <label for="AprJun">April - June</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="JulySeptember" id="JulSep" class="travel">
+                                        <label for="JulSep">July - September</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="OctoberDecember" id="OctDec" class="travel">
+                                        <label for="OctDec">October - December</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="JanuaryMarch" id="JanMar" class="travel">
+                                        <label for="JanMar">January - March</label>
+                                    </li>
+                                </ul>                           
+                                <h4>Other</h4>
+                                <input type="checkbox" name="Flightsincluded" id="flight" class="travel">
+                                <label for="flight">Flights included</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="result outer">
+                    <div class="left inner">
+                        <div class="image">
+
+                            <img src="https://i.postimg.cc/6Qxt7MB4/srilanka.jpg" alt="srilanka" height="250px"
+                                width="355x">
+                            <div class="top-left">DELUXE</div>
+                            <div id="cut-one"></div>
+                            <div class="bottom-right"><img src="https://i.postimg.cc/SNvggpP6/white-heart.png"
+                                    alt="heart" width="40px"></div>
+                        </div>
+                        <div class="info">
+                            <div class="topic">
+                                <h3>SriLankan Sunshine!!!</h3>
+                                <p>&#8377;62&comma;500</p>
+                            </div>
+                            <div class="details-footer">
+                                <ul class="date">
+                                    <li><img src="https://i.postimg.cc/mrwMrb5c/calendar.png" height="10px"
+                                            width="10px"> 27 April&comma; 2019</li>
+                                    <li><img src="https://i.postimg.cc/RZ8f6sSm/moon.png" height="10px"
+                                            width="10px"> 6 Nights</li>
+                                </ul>
+                                <ul class="tag">
+                                    <li>adventure &amp; wildlife</li>
+                                    <li>culture &amp; heritage</li>
+                                    <li>leisure</li>
+                                </ul>
+                                <a href="#" class="details">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right inner">
+                        <div class="image">
+                            <img src="https://i.postimg.cc/dQ5sWRjg/bhutan.jpg" alt="bhutan" height="250px"
+                                width="355px">
+                            <div class="top-left">ACTIVE</div>
+                            <div id="cut-two"></div>
+                            <div class="bottom-right"> <img src="https://i.postimg.cc/SNvggpP6/white-heart.png"
+                                    alt="heart" width="40px" />
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="topic">
+                                <h3>Bhutan:Happy Country,Happy You</h3>
+                                <p>&#8377;57&comma;000</p>
+                            </div>
+                            <div class="details-footer">
+                                <ul class="date">
+                                    <li><img src="https://i.postimg.cc/mrwMrb5c/calendar.png" height="10px"
+                                            width="10px"> 4 May&comma; 2019</li>
+                                    <li><img src="https://i.postimg.cc/RZ8f6sSm/moon.png" height="10px"
+                                            width="10px"> 6 Nights</li>
+                                    <li><img src="https://i.postimg.cc/mkvkZq3p/flight.png" height="10px"
+                                            width="10px"> Flights</li>
+                                </ul>
+                                <ul class="tag">
+                                    <li>active</li>
+                                    <li>culture &amp; heritage</li>
+                                </ul>
+                                <a href="#" class="details">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</body>
+
+</html>
